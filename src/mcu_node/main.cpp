@@ -1,9 +1,8 @@
 #include <mbed.h>
+#include "../common/pecan.hpp"
 
-int main()
-{
-    while(1)
-    {
+// Put MCU Code here: MT, Sched, 
+// CAN, etc; tie it altogether
+int main() {
 
-    }
 }

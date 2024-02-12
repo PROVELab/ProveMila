@@ -1,18 +1,13 @@
-#include <Arduino.h>
-#include <Wire.h>
+#include "../common/pecan.hpp"
+#include "Arduino.h"
+#include "CAN.h"
 
-// GITHUB NOTES
-// We should convert PROVELab GitHub to an organization
-// and make Low Voltage leads owners
-// Set permissions for the main branch to require pull requests approved by leads + anyone else
-// Succession: new leads are added as owners
-
-void setup()
-{
+// Put Telemetry node code here:
+// i.e. CAN receiving and RF sending
+void setup() {
 
 }
 
-void loop()
-{
+void loop() {
 
 }
