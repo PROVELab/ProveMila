@@ -1,18 +1,16 @@
-#include <Arduino.h>
-#include <Wire.h>
+#include "../common/pecan.hpp"
+#include "Arduino.h"
+#include "CAN.h"
 
-// GITHUB NOTES
-// We should convert PROVELab GitHub to an organization
-// and make Low Voltage leads owners
-// Set permissions for the main branch to require pull requests approved by leads + anyone else
-// Succession: new leads are added as owners
-
-void setup()
-{
-
+void setup() {
+    Serial.begin(9600);
+    // start the CAN bus at 500 kbps
+    if (!CAN.begin(500E3)) {
+        Serial.println("Starting CAN failed!");
+        while (1)
+            ;
+    }
+    Serial.println("Telemetry startup succesful");
 }
 
-void loop()
-{
-
-}
+void loop() { printf("test"); }
